@@ -1,0 +1,11 @@
+{
+	"event": "forecastio_webhook",
+	"url": "https://api.forecast.io/forecast/7faceda0bd3e25f0b2e202adbedb8d31/35.812457,-78.826392",
+	"requestType": "GET",
+	"headers": {
+		"Content-Type": "application/json"
+		},
+	"responseTemplate": "{{#currently}}{{temperature}}~{{windBearing}}~{{pressure}}~{{precipProbability}}~{{windSpeed}}~{{/currently}}{{#alerts.0}}{{time}}~{{/alerts.0}}",
+	"query": "exclude=minutely,hourly,daily,flags",
+	"mydevices": true
+}
